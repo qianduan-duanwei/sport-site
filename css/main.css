@@ -1,0 +1,316 @@
+.layout {
+    width: 100%;
+    height: 600px;
+    background: url("../imgs/bg_01_01.jpg") center;
+    vertical-align: top;
+}
+/* header star */
+.header  {
+    width: 1000px;
+    padding-top: 385px;
+    margin: 0 auto;
+}
+.header .header_nav {
+    height: 100px;
+    overflow: hidden;    
+}
+.header .header_nav .nav_link,
+.header .nav_type .nav_item{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.header .header_nav .nav_link {
+    margin-top: 2px;
+}
+.header .nav_type .nav_item {
+    height: 34px;
+    line-height: 34px;
+}
+.header .nav_type .nav_item:hover{
+    text-decoration: none;
+}
+.header .nav_type .nav_item:visited{
+    text-decoration: none;
+}
+/* header end */
+
+/* booking start */
+.layout .booking {
+    width: 1000px;
+    height: 110px;
+    margin: 0 auto;
+}
+.layout .booking>div{
+    height: 100%;
+    float: left;
+}
+.layout .booking .booking_link {
+    width: 248px;
+}
+.layout .booking>div {
+    margin: 0 5px;
+}
+.layout .booking a img,
+.layout .booking .media_notice ul {
+    margin: 13px 0px;
+    height: 90px;
+}
+.layout .booking .booking_link img {
+    width: 252px;
+}
+.layout .booking .check_score,
+.layout .booking .img_dowm {
+    width: 205px;
+}
+
+.layout .booking .media_notice {
+    width: 300px;
+}
+.layout .booking .media_notice ul {
+    background: url("../imgs/00404161924_c2cc2799.jpg") no-repeat center;
+    padding-left: 45px;
+    padding-top: 3px;
+}
+.layout .booking .media_notice ul li{
+    font-size: 14px;
+    line-height: 200%;
+    cursor: pointer;
+}
+/* booking end */
+
+/* headlines start */
+.layout .headlines {
+        height: 81px;
+        background: url("../imgs/1qyh-plus06_17.jpg") no-repeat center;
+        margin-top: 2px;
+        cursor: pointer;
+    }
+.layout .headlines p {
+    height: 100%;
+    line-height: 95px;
+    font-size: 33px;
+    font-family: "Microsoft Yahei";
+    text-align: center;
+    color: #0055c1;
+    font-weight: 700;
+    
+}
+/* headlines end */
+
+/* content start */
+.layout .content {
+    padding: 10px 0px;
+}
+.layout .content .carousel_div {
+    height: 240px;
+}
+.layout .content .carousel {
+    height: 100%;
+}
+
+/* carouser  */
+.content .carousel-control.left,
+.content .carousel-control.right {
+    font-size: 50px;
+    line-height: 240px;
+}
+.carousel_div .carousel-indicators .active {
+    width: 30px;
+    background-color: #DBAA47;
+}
+.carousel_div .carousel-indicators {
+    bottom: 0px;
+}
+.carousel_div .carousel-indicators li {
+    border: none;
+    background-color: #fff;
+    margin: 0 3px;
+}
+.carousel_div .carousel-caption  {
+    font-size: 18px;
+    width: 100%;
+    background-color: rgba(100, 100, 100, .6);
+    left: 0;
+    bottom: 0px;
+}
+.content .marjor_info {
+    padding: 0 20px;
+}
+.content .marjor_info li {
+    border-bottom: 1px dashed #222;
+}
+.content .marjor_info h3 {
+    text-align: center;
+}
+.content .marjor_info h3 a {
+    font-size: 20px;
+    text-align: center;
+    color: #222;
+    font-weight: 700;
+    text-decoration: none;
+}
+.content .marjor_info p {
+    text-indent: 2em;
+}
+.content .marjor_info p a {
+    text-decoration: none;
+    color: #222;
+}
+
+.content h4.tips {
+    background: url("../imgs/tips_img.jpg") no-repeat center;
+    height: 36px;
+    padding: 5px 60px;
+    font-size: 24px;
+    color: #fff;
+}
+.content h4.tips a {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    margin: 7px -25px;
+}
+.content .info_tips {
+    text-align: center;
+}
+.content .info_tips a{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #004dac;
+    text-decoration: none;
+    padding: 2px 0;
+}
+.content .info_ul li {
+    height: 36px;
+    line-height: 36px;
+    padding-left: 60px;
+}
+.content .info_ul li a {
+    color: #222;
+    text-decoration: none;
+    font-size: 16px;
+}
+.content .media_info {
+    line-height: 30px;
+    vertical-align: middle;
+    padding: 20px 10px;
+    position: relative;
+    
+}
+.content .media_info img {
+    width: 200px;
+    height: 120px;
+    vertical-align: middle;
+    position: relative;
+    top: 0;
+    margin-top: -20px;
+}
+.content .media_vedio {
+    width: 415px;
+    margin: 0 auto;
+    border-top: 1px dashed #222;
+    padding: 15px 0;
+    position: relative;
+}
+.content .media_vedio img {
+    position: absolute;
+    top: 0;
+    margin-top: 25px;
+    left: 0;
+    margin-left: 20px;
+}
+.content .media_vedio li {
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 50px;
+    /* background: url("../imgs/qyh_45.jpg") no-repeat ; */
+}
+.content .fllow_media_info ul {
+    padding:0 60px;
+}
+.content .fllow_media_info ul li {
+    font-size: 16px;
+    padding: 6px 0;
+}
+/* banner */
+.content .banner_img img {
+    width: 100%;
+    height: 100px;
+}
+.content .banner_img ul {
+    margin-top: 10px;
+}
+.content .banner_img ul li {
+    width: 499px;
+}
+.content .banner_img ul li img {
+    height: 60px;
+}
+.content .palm_sport img{
+    width: 100%;
+    height:320px; 
+}
+.content .beautiful_tj div{
+    background-color: rgb(116, 192, 235);
+    text-align: center;
+    width: 480px;
+    padding: 5px 0;
+}
+.content .beautiful_tj div img{
+    padding:3px 8px;
+    height: 270px;
+}
+.content .sport_view {
+    background: url("../imgs/sport_views.jpg") no-repeat center;
+    height: 53px;
+    margin-top: 20px;
+    line-height: 53px;
+}
+.content .sport_view a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 50px;
+}
+.row {
+    margin: 0;
+    padding: 0;
+}
+.row .sport_img_item {
+    width: 223px;
+    padding: 0;
+    text-align: center;
+    height: 158px;
+    line-height: 158px;
+    margin: 13px;
+    border: 1px solid #add3f7;
+}
+.content .sport_img_item img {
+    width: 213px;
+    height: 146px;
+}
+.content .sport_img_item p {
+    font-size: 12px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+.content .sport_view_info {
+    margin-top: 20px;
+    padding: 10px 0px;
+}
+.content .sport_view_info ul {
+    padding: 0 10px;
+}
+.content .sport_view_info ul li{
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+}
+.content .sport_view_info ul li span {
+    margin-left: 10px;
+}
+/* content end */

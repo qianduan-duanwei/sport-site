@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:#fff; font-size:12px; font-family:"microsoft yahei","黑体", Arial; color:#333;margin:0;padding:0;}
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, code,del, dfn, em, img, q, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td{border:0;list-style:none;margin:0;padding:0; font-style: normal;}
+input,select,textarea{font-size:12px;font-family: "microsoft yahei","黑体", Arial; line-height:18px; padding:0; margin:0; color:#333;outline: none}
+p{ line-height:1.5em;}
+a{text-decoration:none;outline:none; color:#333}
+a:hover{color:#333;text-decoration: none}
+a,a:focus{ outline:none;}
+a,img{ border:none;}
+img{ vertical-align:middle;}
+table{ border-collapse:collapse;  border-spacing: 0;}
+td{ word-break:break-all; word-wrap:break-word}
+textarea{　resize:none}
+/*float*/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+.clearfix {display:block; }
+.fl{float:left;}
+.fr{float:right;}
+.clear{ clear:both}
+/*common*/
+.tc{ text-align:center}
+.tr{ text-align:right}
+.tl{ text-align:left}
+.underline{ text-decoration:underline}
+.hide{ display:none}
+.pos-rel{ position:relative}
+h1, h2, h3, h4, h5, h6{ font-size:14px;}
+.ft12{ font-size:12px !important;}
+.ft14{ font-size:14px !important;}
+.ft16{ font-size:16px !important;}
+.ft18{ font-size:18px !important;}
+.ft30{ font-size:30px !important;}
+/*margin*/
+.mlr5 {
+    margin:  0 5px;
+}
+.mt0{ margin-top:0px;}
+.mt5{ margin-top:5px;}
+.mt10{ margin-top:10px;}
+.mt15{ margin-top:15px;}
+.mt20{ margin-top:20px;}
+.mt25{ margin-top:25px;}
+.mt30{ margin-top:30px;}
+.mr5{ margin-right:5px;}
+.mr10{ margin-right:10px;}
+.mr15{ margin-right:15px;}
+.mr20{ margin-right:20px;}
+.mr30{ margin-right:30px;}
+.mr40{ margin-right:40px;}
+.mb5{ margin-bottom:5px;}
+.mb10{ margin-bottom:10px;}
+.mb15{ margin-bottom:15px;}
+.mb20{ margin-bottom:20px;}
+.mb30{ margin-bottom:30px;}
+.ml5{ margin-left:5px;}
+.ml10{ margin-left:10px;}
+.ml15{ margin-left:15px;}
+.ml20{ margin-left:20px;}
+.ml30{ margin-left:30px;}
+.ml120{ margin-left:120px;}
+.ml200{ margin-left:200px;}
+.ml300{ margin-left:300px;}
+.padding10{ padding: 10px;}
+.padding20{ padding: 20px;}
+.padding25{padding: 25px;}
+.padding30{ padding: 30px;}
+.padding40{ padding: 40px;}
+.no-padding{padding: 0 !important}
+/*width*/
+.w10{ width:10px;}
+.w20{ width:20px;}
+.w30{ width:30px;}
+.w40{ width:40px;}
+.w50{ width:50px;}
+.w60{ width:60px;}
+.w70{ width:70px;}
+.w80{ width:80px;}
+.w90{ width:90px;}
+.w100{ width:100px;}
+.w110{ width:110px;}
+.w120{ width:120px;}
+.w130{ width:130px;}
+.w140{ width:140px;}
+.w150{ width:150px;}
+.w160{ width:160px;}
+.w170{ width:170px;}
+.w180{ width:180px;}
+.w190{ width:190px;}
+.w200{ width:200px;}
+.w210{ width:210px;}
+.w220{ width:220px;}
+.w230{ width:230px;}
+.w240{ width:240px;}
+.w250{ width:250px;}
+.w260{ width:260px;}
+.w270{ width:270px;}
+.w280{ width:280px;}
+.w290{ width:290px;}
+.w300{ width:300px;}
+.w_15{width: 15%;}
+.w_10{width: 10%}
+.w1000{width:1000px;margin:0 auto;}
+.l50{float: left;width: 50%}
+.r50{float: right;width:50%}
+/* font */
+.font16 {font-size: 16px;font-family: "Microsoft Yahei"}
