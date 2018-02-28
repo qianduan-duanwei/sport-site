@@ -71,6 +71,8 @@ h1, h2, h3, h4, h5, h6{ font-size:14px;}
 .padding40{ padding: 40px;}
 .no-padding{padding: 0 !important}
 /*width*/
+.w_100{width: 100%}
+.w_10{width: 10%;float: left;font-size: 12px;height: 110px}
 .w10{ width:10px;}
 .w20{ width:20px;}
 .w30{ width:30px;}
