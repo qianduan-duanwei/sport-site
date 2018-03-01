@@ -678,7 +678,7 @@
     width: 100%;
     border: 1px dashed #ccc;
     width: 990px;
-    margin-top: 49px;
+    margin-top: 57px;
 }
 .content .sport_remember .carousel-inner .item {
     width: 910px;
@@ -725,7 +725,7 @@
    border-radius: 50%;
    background-color: #ff7200;
    position: absolute;
-   
+   margin-top: 9px;
 }
 .content .sport_remember .carousel-indicators li .dian {
     width: 10px;
@@ -734,13 +734,14 @@
     background-color: blue;
     position: absolute;
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 11px;
  }
 .content .sport_remember .carousel-indicators li.active span {
     display: block;
 }   
 .content .sport_remember .carousel-indicators li.active {
     color: #ff7200;
+    font-size: 24px;
 }
 .content .sport_remember .carousel-inner .carousel_text li {
     margin-bottom: 20px;
