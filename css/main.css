@@ -726,6 +726,7 @@
    background-color: #ff7200;
    position: absolute;
    margin-top: 9px;
+   margin-left: 33px;
 }
 .content .sport_remember .carousel-indicators li .dian {
     width: 10px;
@@ -738,6 +739,7 @@
  }
 .content .sport_remember .carousel-indicators li.active span {
     display: block;
+    margin-left: 10px;
 }   
 .content .sport_remember .carousel-indicators li.active {
     color: #ff7200;
@@ -750,7 +752,7 @@
 }
 .content .sport_remember .carousel-inner .carousel_text li i, 
 .content .sport_remember .carousel-inner .carousel_text li b{
-    line-height: 50px;
+    line-height: 40px;
     font-size: 18px;
     font-weight: 400;
 }
