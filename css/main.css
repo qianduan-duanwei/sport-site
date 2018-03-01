@@ -118,6 +118,7 @@
 .content .carousel-control.right {
     font-size: 50px;
     line-height: 240px;
+    background-image: none;
 }
 .carousel_div .carousel-indicators .active {
     width: 30px;
@@ -760,5 +761,11 @@
 .content .sport_remember .carousel-inner .carousel_text .border_top {
     border-top: 1px dashed #222;
 }
-
+.content .sport_remember .carousel-control {
+    line-height: 550px;
+    font-size: 100px;
+}
+.content .sport_remember .carousel-control:hover{
+    color: #ff7200;
+}
 /* content end */
