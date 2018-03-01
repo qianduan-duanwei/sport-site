@@ -662,4 +662,103 @@
     margin-bottom: 15px;
     width: 990px;
 }
+.content .sport_remember .carousel {
+    margin-top: 115px;
+}
+.content .sport_remember .carousel_pr {
+    position: relative;
+    height: 115px;
+    margin-top: -115px;
+    width: 1000px;
+}
+.content .sport_remember .carousel_pr p {
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+    border: 1px dashed #ccc;
+    width: 990px;
+    margin-top: 49px;
+}
+.content .sport_remember .carousel-inner .item {
+    width: 910px;
+}
+.content .sport_remember .carousel-inner .item img {
+    width: 377px;
+    margin-left: 100px;
+}
+.content .sport_remember .carousel-inner .carousel_text {
+    margin-right: 20px;
+    width: 377px;
+    padding-top: 30px;
+}
+.content .sport_remember .carousel-indicators {
+    top: 0;
+    margin-top: 0;
+    height: 115px;
+    left: 0;
+    width: 1000px;
+    margin-left: 0
+}
+.content .sport_remember .carousel-indicators li {
+    font-size: 18px;
+    text-indent:0;
+    height: 100px;
+    margin: 10px 10px;
+    width: auto;
+    border: none;
+   
+}
+.content .sport_remember .carousel-indicators li span {
+    position: absolute;
+    width: 54px;
+    top: 0;
+    margin-top: 66px;
+    display: none; 
+}
+.carousel-indicators .active {
+    background-color: transparent;
+}
+.content .sport_remember .carousel-indicators li.active .dian {
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: #ff7200;
+   position: absolute;
+   
+}
+.content .sport_remember .carousel-indicators li .dian {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+ }
+.content .sport_remember .carousel-indicators li.active span {
+    display: block;
+}   
+.content .sport_remember .carousel-indicators li.active {
+    color: #ff7200;
+}
+.content .sport_remember .carousel-inner .carousel_text li {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    
+}
+.content .sport_remember .carousel-inner .carousel_text li i, 
+.content .sport_remember .carousel-inner .carousel_text li b{
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.content .sport_remember .carousel-inner .carousel_text li i{
+    color: #0258c3;
+    font-weight: 700;
+}
+.content .sport_remember .carousel-inner .carousel_text .border_top {
+    border-top: 1px dashed #222;
+}
+
 /* content end */
