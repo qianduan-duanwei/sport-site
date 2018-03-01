@@ -634,4 +634,32 @@
     margin: 0px 10px 0 70px;
     line-height: 26px;
 }
+.content .sport_huiming .huiming_right .col_item {
+    padding: 0;
+}
+.content .sport_huiming .huiming_right .col-xs-5 {
+    text-indent: 0;
+    padding: 10px;
+}
+.content .sport_huiming .huiming_right img {
+    width: 130px;
+    
+}
+.content .sport_huiming .huiming_right li  {
+    font-size: 12px;
+    text-indent: 2em;
+    height: 100px;
+    
+}
+.content .sport_huiming .huiming_right li .tips {
+    font-size: 14px;
+    text-indent: 0;
+    color: blue;
+}
+/* sport_remember */
+.content .sport_remember .bg_img {
+    background: url("../imgs/sport_remember.jpg") no-repeat center;
+    margin-bottom: 15px;
+    width: 990px;
+}
 /* content end */
