@@ -458,7 +458,7 @@
     bottom: 0;
     text-align: center;
     color: #fff;
-    background-color: rgba(100, 100, 100, .7)
+    background-color: rgba(29, 28, 28, 0.7);
 }
 .content .sport_field .sport_field_left {
     width: 438px;
@@ -495,5 +495,143 @@
 .content .sport_field .right_bottom {
     height: 349px;
 }
+/* sport_map */
+.content .sport_map .bg_img {
+    background: url("../imgs/sport_map.jpg") no-repeat center;
+}
+/* beautiful_tianjing */
+.content .beautiful_tianjing {
+    overflow: hidden;
+}
+.content .beautiful_tianjing .bg_img {
+    background: url("../imgs/beautiful_tianjing.jpg") no-repeat center;
+    margin-bottom: 15px;
+    width: 990px;
+}
+.content .beautiful_tianjing .bg_text {
+    height: 110px;
+    background: url("../imgs/bg_dian.jpg");
+   
+}
+.content .beautiful_tianjing .bg_text .left_text {
+    line-height: 30px;
+    color: #fff;
+    width: 830px;
+    padding: 10px 40px;
+    margin-bottom: 20px;
+}
+.content .beautiful_tianjing .bg_text .right_text {
+    line-height: 30px;
+    color: #fff;
+    width: 830px;
+    padding: 10px 40px;
+    margin-bottom: 20px;
+}
+.content .beautiful_tianjing .open_tianjing .bg_text .right_text {
+   width: 660px;
+}
+.content .beautiful_tianjing .bg_text .img_right {
+    width: 140px;
+    height: 90px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.content .beautiful_tianjing .bg_text .img_left {
+    width: 140px;
+    height: 90px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.content .beautiful_tianjing .bg_text .img_text img{
+    width: 100%;
+}
+.content .beautiful_tianjing .img_box {
+    width: 600px;
+    height: 310px;
+    border: 1px solid #222;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 310px;
+}
+.content .beautiful_tianjing .tj_info {
+    padding-top: 20px;
+}
+.content .beautiful_tianjing .text_box {
+    width: 378px;
+    margin-left: 8px;
+}
+.content .beautiful_tianjing .pull-left.text_box {
+    
+    margin-left: 0px;
+}
+.content .beautiful_tianjing .text_box .tips {
+    height: 38px;
+    width: 100%;
+    background: url("../imgs/beautiful_tj_tips_bg.jpg") no-repeat center;
+    line-height: 38px;
+    text-align: center;
+    font-size: 18px;
+    color: #004dac;
+    margin-bottom: 10px;
+}
+.content .beautiful_tianjing .text_box .header_info {
+    text-indent: 2em;
+    line-height: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px  dashed #ccc;
+    height: 100px;
+}
+.content .beautiful_tianjing .text_box .header_info a {
+    text-decoration: none;
+}
 
+/* sport_huiming */
+.content .sport_huiming .bg_img {
+    background: url("../imgs/sport_huiming.jpg") no-repeat center;
+    margin-bottom: 15px;
+    width: 990px;
+}
+.content .sport_huiming .huiming_left {
+    width: 598px;
+    border-top: 2px solid blue;
+    padding: 10px;
+}
+.content .sport_huiming .huiming_right {
+    width: 380px;
+    font-size: 12px;
+}
+.content .sport_huiming .huiming_left img {
+    width: 302px;
+    height: 271px;
+     
+}
+.content .sport_huiming .huiming_left .header_tips{
+    width: 220px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+   margin-left: 40px;
+}
+.content .sport_huiming .huiming_left .header_tips p {
+    border-left: 6px solid #1E1E92;
+}
+.content .sport_huiming .huiming_left .info_text {
+    height: 220px;
+    width: 267px; 
+    position: relative;
+}
+.content .sport_huiming .huiming_left .info_text img {
+    position: absolute;
+    width: 250px;
+    height: 220px;
+    left: 0;
+    margin-left: 40px;
+    z-index: -1;
+}
+.content .sport_huiming .huiming_left .info_text p {
+    text-indent: 2em;
+    padding-top: 10px;
+    margin: 0px 10px 0 70px;
+    line-height: 26px;
+}
 /* content end */
