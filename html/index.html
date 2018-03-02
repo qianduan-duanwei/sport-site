@@ -1733,6 +1733,48 @@
                                 </a>
                             </div>
                     </div>
+
+                    <!-- sport_cooperation -->
+                    <div class="sport_cooperation col-xs-12 sport_m mt20">
+                        <div class="clearfix bg_img">
+                            <a href="javascript:;" class="pull-right"> 更多>></a>
+                        </div>
+                        <div class="cooperation_tab">
+                            <ul id="myTab" class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#cooperation_01" data-toggle="tab">
+                                        <img src="../imgs/sport_cooperation_01.png" alt="img">
+                                    </a>
+                                </li>
+                                <li><a href="#cooperation_02" data-toggle="tab"><img src="../imgs/sport_cooperation_02.png" alt="img"></a></li>
+                                <li><a href="#cooperation_03" data-toggle="tab"><img src="../imgs/sport_cooperation_03.png" alt=""></a></li>
+                                <li><a href="#cooperation_04" data-toggle="tab"><img src="../imgs/sport_cooperation_04.png" alt=""></a></li>
+                                <li><a href="#cooperation_05" data-toggle="tab"><img src="../imgs/sport_cooperation_05.png" alt=""></a></li>
+                                <li><a href="#cooperation_06" data-toggle="tab"><img src="../imgs/sport_cooperation_06.png" alt=""></a></li>
+                                
+                            </ul>
+                            <div id="myTabContent" class="tab-content">
+                                <div class="tab-pane fade in active" id="cooperation_01">
+                                    <img src="../imgs/cooperation_01.png" alt="img" title="01">
+                                </div>
+                                <div class="tab-pane fade" id="cooperation_02">
+                                    <img src="../imgs/cooperation_02.png" alt="img" title="02">
+                                </div>
+                                <div class="tab-pane fade" id="cooperation_03">
+                                    <img src="../imgs/cooperation_03.png" alt="img" title="03">
+                                </div>
+                                <div class="tab-pane fade" id="cooperation_04">
+                                    <img src="../imgs/cooperation_04.png" alt="img" title="04">
+                                </div>
+                                <div class="tab-pane fade" id="cooperation_05">
+                                     <img src="../imgs/cooperation_05.png" alt="img" title="05">
+                                </div>
+                                <div class="tab-pane fade" id="cooperation_06" alt="img">
+                                   
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
                 </div>
             </div>
                 
@@ -1745,6 +1787,12 @@
         $(function(){
             $("#myCarousel").carousel()
             $("#rememberCarousel").carousel()
+            $("#myTab li").on("click",function(){
+                $("#myTab li").each(function(i,v){
+                    $(v).find("img").attr("src","../imgs/sport_cooperation_0"+ (i+1) +".png")
+                })
+                $(this).find("img").attr("src","../imgs/cooperation_active_0"+ ($(this).index()+1) +".png")
+            })
         })
     </script>
 </body>

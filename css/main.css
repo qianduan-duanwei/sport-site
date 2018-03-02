@@ -771,4 +771,42 @@
 .content .sport_remember .carousel-control:hover{
     color: #ff7200;
 }
+
+/* sport_cooperation */
+.content .sport_cooperation .bg_img {
+    background: url("../imgs/sport_cooperation.jpg") no-repeat center;
+    margin-bottom: 15px;
+    width: 990px;
+}
+.content .sport_cooperation .cooperation_tab {
+    margin-top: 35px;
+    position: relative;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+.content .sport_cooperation .cooperation_tab .nav li {
+    width: 135px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 13px;
+}
+.content .sport_cooperation .cooperation_tab .nav li a {
+    padding: 0;
+    margin: 0;
+}
+.content .sport_cooperation .cooperation_tab ul {
+    border:none;
+    position: absolute;
+    top: 0px;
+    margin-top: -20px;
+}
+.content .sport_cooperation .cooperation_tab .tab-content {
+    margin-top: 30px;
+    min-height: 100px;
+}
+.content .sport_cooperation .cooperation_tab .tab-pane img{
+    width: 900px;
+    height: auto;
+}
 /* content end */
