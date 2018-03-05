@@ -833,3 +833,87 @@
     text-align: center;
 }
 /* footer end  */
+
+/* index  html end */
+
+
+
+/* beautiful_tj html start */
+.beautiful_tj .layout .content {
+    padding: 0;
+}
+.beautiful_tj .content .sport_view_info {
+    margin: 0;
+    padding: 0;
+}
+
+/* beautiful_tj html end */
+
+
+
+/* sport_dynamic html start */
+
+.sport_dynamic .content .sport_view_info {
+    margin: 0;
+    padding: 0;
+}
+.sport_dynamic .content .sport_dynamic {
+    background: #fff;
+    
+}
+/* sport_dynamic html end */
+
+
+/* huiming  html start */
+
+.huiming .layout .content {
+    padding: 0;
+}
+.huiming .content .sport_view_info {
+    margin: 0;
+    padding: 0;
+}
+.huiming .content .sport_huiming .bg_img {
+    width: 1000px;
+}
+/* huiming  html end */
+
+
+/* pic_sport  html start */
+
+.pic_sport .content .sport_info {
+    background: #fff;
+}
+.pic_sport .content .sport_info .pic {
+    margin-left: 15px;
+}
+.pic_sport .row .sport_img_item {
+    width: 33.33333333%;
+    margin: 10px 0;
+    height: 190px;
+    line-height: 190px;
+    border: none ;
+}
+.pic_sport .content .sport_img_item img {
+    width: 250px;
+    height: 165px;
+}
+/* pic_sport end */
+
+/* sport_notice html start */
+.notice .content {
+    background: #fff;
+}
+
+.notice .layout .content .pull-left ul  li {
+    line-height: 38px;
+    height: 38px;
+}
+.notice .layout .content .pull-right ul  li {
+    margin: 30px;
+}
+.notice .layout .content .paging {
+    text-align: center;
+}
+
+/* sport_notice html end */
