@@ -1036,3 +1036,83 @@
 }
 
 /* sport_notice html end */
+
+
+/* news_info html  start */
+
+.news_info .content {
+    background: #fff;
+}
+.news_info .news_content .info_title {
+    padding: 0 20px;
+    border-bottom: 1px solid  #ccc;
+}
+.news_info .news_content .info_title h3,
+.news_info .news_content .info_title p {
+    text-align: center;
+}
+.news_info .news_content .info_title h3 {
+    color: #0e5fc7;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.news_info .news_content .info p,
+.news_info .news_content .link_to  {
+    padding: 10px 0;
+    line-height: 35px;
+    font-size: 18px;
+    text-indent: 2em;
+}
+.news_info .show img {
+    margin: 0 10px;
+}
+.news_info .show .moble_erweima {
+    width: 87px;  
+}
+.news_info .sport_project .bg_06{
+    height: 235px;
+   background: url("../imgs/bg_06.jpg") repeat-x;
+}
+.news_info .sport_project .bg_06 span {
+    display: inline-block;
+    width: 92px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin: 10px 3px;
+    color: #0e5fc7;
+   
+}
+.news_info .sport_project .bg_06 p {
+    color: #0e5fc7;
+    
+}
+.news_info .sport_changguan ul li{
+    text-align: center;
+    width: 50%;
+    margin-top: 10px ;
+}
+.news_info .sport_changguan ul li p {
+    margin: 0;
+   padding-top: 10px;
+}
+.news_info .sport_huiyi ul {
+    width: 100%;
+}
+.news_info .sport_huiyi ul .tips {
+    font-size: 16px;
+    padding: 5px 0;
+    font-weight: 700;
+    text-align: center;
+}
+.news_info .sport_huiyi ul img {
+    margin-right: 10px;
+}
+.news_info .p_more {
+    padding-left: 10px;
+}
+ /* news_info html end */
