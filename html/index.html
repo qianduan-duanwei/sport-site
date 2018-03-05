@@ -1291,7 +1291,22 @@
                         <div class="clearfix bg_img">
                             <a href="javascript:;" class="pull-right"> 更多>></a>
                         </div>
-                        
+                        <div class="map_content mt15">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#map_tianjin_panel" data-toggle="tab">天津</a></li>
+                            </ul>
+                              <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active clearfix" id="map_tianjin_panel">
+                                    <div class="menu fl">
+                                        <ul id="map_tianjin_point_list">
+                                        </ul>
+                                    </div>
+                                    <div id="map_tianjin" class="map fl"></div>
+                                </div>
+                            </div>
+                            <div id="map_result" class="map_result"></div>
+                        </div>
                     </div>
 
                     <!-- beautiful_tianjing -->
@@ -1818,6 +1833,7 @@
         </div>
 
     </div>
+    <script src="https://webapi.amap.com/maps?v=1.4.0&key=6c382e7e4e87865f60ec59e02c88afae"></script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script>
@@ -1830,6 +1846,161 @@
                 })
                 $(this).find("img").attr("src","../imgs/cooperation_active_0"+ ($(this).index()+1) +".png")
             })
+            //初始化地图
+            var map = new AMap.Map('map_tianjin', {
+                showIndoorMap: false,
+                zoom: 11
+            });
+            //加载插件
+            AMap.plugin(['AMap.ToolBar'], function () {
+                //创建并添加工具条控件(缩放、平移)
+                var toolBar = new AMap.ToolBar();
+                map.addControl(toolBar);
+            })
+            //天津城建大学体育场等地址的高德地图点坐标
+            var pointerList = [{
+                    name: '天津城建大学体育场',
+                    address: '天津黄金大道上',
+                    project: '足球',
+                    img: 'https://tpc.googlesyndication.com/simgad/5843493769827749134',
+                    position: [117.097489, 39.093594]
+                },
+                {
+                    name: '静海区团泊体育大道',
+                    address: '天津黄金大道上',
+                    project: '蓝球',
+                    img: 'https://tpc.googlesyndication.com/simgad/5843493769827749134',
+                    position: [117.085757, 38.9722]
+                },
+                {
+                    name: '宝坻体育馆',
+                    address: '天津黄金大道上',
+                    project: '乒乓球',
+                    img: 'https://tpc.googlesyndication.com/simgad/5843493769827749134',
+                    position: [117.278445, 39.691332]
+                },
+                {
+                    name: '天津农学院体育馆',
+                    address: '天津黄金大道上',
+                    project: '羽毛球',
+                    img: 'https://tpc.googlesyndication.com/simgad/5843493769827749134',
+                    position: [117.102833, 39.093235]
+                }
+            ]
+            //信息窗口
+            var infoWindow = new AMap.InfoWindow({
+                autoMove: true,
+                closeWhenClickMap: true,
+                offset: new AMap.Pixel(0, -30)
+            });
+            //信息窗口内容
+            var $infoWindowContent = $(
+                '<div class="info-window">' +
+                '<h3 class="info-window-title"></h3>' +
+                '<div class="info-window-wrap">' +
+                '<img class="info-window-img" src="" />' +
+                '<div class="info-window-text">' +
+                '<div><span class="color-blue">场馆名称：</span><span class="info-window-name"></span></div>' +
+                '<div><span class="color-blue">承办项目：</span><span class="info-window-project"></span></div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="info-window-search-wrap">' +
+                '<span class="color-blue">起点：</span><input class="info-window-search-input" type="text" /><button class="info-window-search-gj">公交</button><button class="info-window-search-zj">自驾</button>' +
+                '</div>' +
+                '</div>'
+            )
+            //加载公交查询服务
+            var transfer = null;
+            AMap.service('AMap.Transfer', function () { //回调函数
+                //高德地图公交查询初始化
+                transfer = new AMap.Transfer({
+                    map: map,
+                    panel: 'map_result',
+                    city: '天津市',
+                    policy: AMap.TransferPolicy.LEAST_TIME //乘车策略
+                });
+                $infoWindowContent.on('click', '.info-window-search-gj', function () {
+                    var startAddress = $.trim($infoWindowContent.find(
+                        '.info-window-search-input').val())
+                    //第一个参数为用户输入的地址，第二个参数为场馆的名字
+                    driving.clear()
+                    transfer.search([{
+                            keyword: startAddress
+                        },
+                        {
+                            keyword: $infoWindowContent.data('item').name
+                        }
+                    ]);
+                })
+            })
+            //加载驾车查询服务
+            var driving = null;
+            AMap.service('AMap.Driving', function () { //回调函数
+                //高德地图构造路线导航类
+                driving = new AMap.Driving({
+                    map: map,
+                    panel: "map_result",
+                    city: "天津市"
+                });
+                $infoWindowContent.on('click', '.info-window-search-zj', function () {
+                    var startAddress = $.trim($infoWindowContent.find(
+                        '.info-window-search-input').val())
+                    // 根据起终点名称规划驾车导航路线
+                    transfer.clear()
+                    driving.search([{
+                            keyword: startAddress
+                        },
+                        {
+                            keyword: $infoWindowContent.data('item').name
+                        }
+                    ]);
+                })
+            })
+            //添加点标记到地图中
+            var marker = null;
+            var $li = null;
+            for (var i = 0, len = pointerList.length; i < len; i++) {
+                //生成左侧菜单
+                $li = $('<li>' + pointerList[i].name + '</li>').data('item', pointerList[i])
+                //点击弹出信息窗
+                $li.on('click', function () {
+                    //清除公交及自驾查询的结果数据
+                    transfer.clear();
+                    driving.clear();
+                    $infoWindowContent.find('.info-window-search-input').val('')
+                    var $this = $(this)
+                    $infoWindowContent.data('item', $this.data('item'))
+                    $infoWindowContent.find('.info-window-title').text($this.data('item').address)
+                    $infoWindowContent.find('.info-window-img').attr('src', $this.data('item').img)
+                    $infoWindowContent.find('.info-window-name').text($this.data('item').name)
+                    $infoWindowContent.find('.info-window-project').text($this.data('item').project)
+                    infoWindow.setContent($infoWindowContent.get(0))
+                    infoWindow.open(map, $this.data('item').position);
+                })
+                $('#map_tianjin_point_list').append($li)
+                //生成点标记
+                marker = new AMap.Marker({
+                    icon: "https://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+                    position: pointerList[i].position
+                });
+                marker.data = pointerList[i]
+                //点击弹出信息窗
+                marker.on('click', function () {
+                    //清除公交及自驾查询的结果数据
+                    transfer.clear();
+                    driving.clear();
+                    $infoWindowContent.find('.info-window-search-input').val('')
+                    $infoWindowContent.data('item', this.data)
+                    $infoWindowContent.find('.info-window-title').text(this.data.address)
+                    $infoWindowContent.find('.info-window-img').attr('src', this.data.img)
+                    $infoWindowContent.find('.info-window-name').text(this.data.name)
+                    $infoWindowContent.find('.info-window-project').text(this.data.project)
+                    infoWindow.setContent($infoWindowContent.get(0))
+                    infoWindow.open(map, this.getPosition());
+                })
+                marker.setMap(map); //点标记添加到地图中去
+            }
+            map.setFitView(); //让地图显示所有的点标记
         })
     </script>
 </body>
