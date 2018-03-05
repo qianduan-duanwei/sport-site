@@ -574,6 +574,7 @@
 }
 
 .info-window .info-window-title {
+    margin: 0;
     padding-left: 10px;
     height: 30px;
     line-height: 30px;
